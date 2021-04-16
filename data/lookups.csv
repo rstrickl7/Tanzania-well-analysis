@@ -52,7 +52,6 @@ rc mission,church
 anglican church,church
 church of disciples,church
 anglikana church,church
-cetral government /rc,church
 pentecostal church,church
 cg/rc,church
 rc missionary,church
@@ -78,7 +77,6 @@ dwe/anglican church,church
 missi,church
 mission,church
 ndanda missions,church
-rc/mission,church
 cvs miss,church
 missionaries,church
 hydom luthelani,church
@@ -163,12 +161,10 @@ village water committee,community
 adra /community,community
 communit,community
 sekei village community,community
-government /community,community
 mtuwasa and community,community
 summit for water/community,community
 rwe community,community
 shelisheli commission,community
-government and community,community
 oldadai village community,community
 maseka community,community
 village community members,community
@@ -293,3 +289,6 @@ africaone ltd,african group
 nan,other
 -,other
 other,other
+unisef,unicef
+china,chinese group
+roman cathoric same,church
