@@ -1,5 +1,7 @@
 # Tanzania-well-analysis
-This analysis is based on the competition Driven Data® published about water pumps in Tanzania. The competition information was obtained by the Tanzania Ministry of Water using an open-source platform called Taarifa. Tanzania is the largest country in East Africa, with a population of about 60 million. Half of the population does not have access to clean water, and 2/3 of the population suffers from poor sanitation. In poor households, families often have to spend several hours walking to obtain water from water pumps. Billions of dollars in foreign aid are being provided to Tanzania to tackle the freshwater problem. However, the Tanzanian government cannot solve this problem. A significant part of water pumps are entirely out of order or do not function; the others require repair. Tanzania’s Ministry of Water Resources agreed with Taarifa, and they launched the DrivenData competition. 
+This analysis is based on the competition Driven Data® published about water pumps in Tanzania. The competition information was obtained by the Tanzania Ministry of Water using an open-source platform called Taarifa. Tanzania is the largest country in East Africa, with a population of about 60 million. Half of the population does not have access to clean water. The Tanzanian government is struggling to solve this problem. A significant part of water pumps are entirely out of order or do not function; the others require repair. Tanzania’s Ministry of Water Resources agreed with Taarifa, and they launched the DrivenData competition. 
+
+**Author**: [Becky Strickland]
 
 ## Data
 The data has many characteristics associated with water pumps. Data related to geographical locations, organizations that create and manage them, and some data about the region, local government areas. Also, there is information on the types of checkouts, types and number of payments. The water supply points were divided into functional, non-functional and functional but in need of repair. The goal of the competition is to build a model that predicts the functionality of water supply points.
@@ -46,4 +48,53 @@ source_class — The source of the water
 waterpoint_type — The kind of waterpoint
 waterpoint_type_group — The kind of waterpoint
 
-Information quoted from Taras Baranyuk https://towardsdatascience.com/pump-it-up-with-catboost-828bf9eaac68
+## This project was created using the following libraries:
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
+import seaborn as sns
+import numpy as np
+import scipy.stats as stats
+import statsmodels.api as sm
+import catboost
+import time
+import warnings
+warnings.filterwarnings('ignore')
+
+from sklearn.utils import class_weight
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+from catboost import Pool, sum_models
+from catboost import CatBoostClassifier
+from sklearn.feature_selection import RFE
+from sklearn.metrics import mean_squared_error, r2_score, mean_absolute_error, balanced_accuracy_score
+from sklearn.model_selection import KFold, cross_val_score, StratifiedKFold
+from sklearn.preprocessing import LabelEncoder,  OneHotEncoder
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.metrics import classification_report, confusion_matrix
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import GridSearchCV
+from sklearn import metrics
+from sklearn.model_selection import RandomizedSearchCV
+from scipy.stats import uniform, truncnorm, randint
+
+
+## For More Information
+
+See the full analysis in the [Jupyter Notebook](./Tanzanian-well-analysis.ipynb) or review this [presentation](./Water-Pump-Analysis.pdf).
+
+
+## Repository Structure
+
+```
+├── .ipynb_checkpoints
+├── real-estate-analysis.ipynb
+├── github-print.pdf
+├── README.md
+├── real-estate-analysis - Jupyter Notebook.pdf
+└── Real-Estate-Analysis.pdf
