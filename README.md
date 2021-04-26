@@ -93,8 +93,8 @@ See the full analysis in the [Jupyter Notebook](./Tanzanian-well-analysis.ipynb)
 
 ```
 ├── .ipynb_checkpoints
-├── real-estate-analysis.ipynb
-├── github-print.pdf
+├── data
 ├── README.md
-├── real-estate-analysis - Jupyter Notebook.pdf
-└── Real-Estate-Analysis.pdf
+├── Tanzanian-well-analysis-Jupyter_Notebook.pdf
+├── Tanzanian-well-analysis.ipynb
+└── Water-Pump-Analysis.pdf
